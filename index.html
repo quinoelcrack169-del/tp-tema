@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>META</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box;}
-        body { font-family: Arial, sans-serif; color: #183044; background: #f4f8ff; line-height: 1.6;}
-        .contenedor { width: 90%; max-width: 1000px; margin: auto;}
-        header { padding: 20px 0;}
-        nav { display: flex; justify-content: space-between; align-items: center; gap:15px;}
-        .logo { color: #0866ff; font-size: 1.8rem; font-weight: bold; text-decoration: none;}
-        nav ul { display: flex; gap: 18px; list-style: none;}
-        nav a { color:#183044; text-decoration: none;}
-        nav a:hover { background: #064fc4;}
-        .portadda {
-            .
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meta - Tecnología y conexión</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<header class="contenedor">
-    <nav>
-        <a class="logo" href="#inicio">∞ Meta</a>
-        <ul>
-            <li><a href="#prodctos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+<header>
+<h1>∞ Meta</h1>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#productos">Productos</a>
+<a href="#contacto">Contacto</a>
+</nav>
 </header>
 <main>
-    <section class="portada contenedor" id="inicio">
-        <div>
-            <h1>El futuro se construye<span class="azul">conectados.</span></h1>
-            <p>Meta crea tecnologias para conectar personas y compartir experiencias.</p>
-            <a class="boton" href="#productos">Ver productos</a>
-        </div>
-        <div  class="ilustracion" aria-label="simbolo de infinito"></div>
-    </section>
-    <section class="productos contenedor" id="productos">
-    <h2>Nuestros productos</h2>
-        <div class="rejilla">
-            <article class="tarjeta">
-                <h3>Facebook</h3>
-                <p>Comparti momentos y conecta con comunidades.</p>
-                <a href="https://www.facebook.com/">Visitar</a>
-            </article>
-            <article class="tarjeta">
-                <h3>Whatsapp</h3>
-                <p>Chatea y comparti archivos facilmente.</p>
-                <a href="https://www.whatsapp.com/">Visitar</a>
-            </article>
-            <article class="tarjeta">
-                <h3>Instagram</h3>
-                <p>Comparti fotos,videos e historias.</p>
-                <a href="https://www.instagram.com/">Visitar</a>
-            </article>
-        </div>
-    </section>
+<section id="inicio">
+<h2>Conectando al mundo</h2>
+<p>Meta es una empresa tecnológica que busca conectar personas mediante diferentes plataformas digitales.</p>
+<img src="images/meta-connection.svg" alt="Símbolo de Meta">
+</section>
+<section id="nosotros">
+<h2>Acerca de Meta</h2>
+<p>Meta desarrolla aplicaciones y tecnologías para mejorar la comunicación y crear nuevas experiencias digitales.</p>
+<img src="images/digital-community.svg" alt="Personas conectadas">
+</section>
+<section id="productos">
+<h2>Nuestros productos</h2>
+<ul>
+<li><a href="https://www.facebook.com/">Facebook:</a> red social para compartir contenido.</li>
+<li><a href="https://www.instagram.com/">Instagram:</a> plataforma para compartir fotos y videos.</li>
+<li><a href="https://www.whatsapp.com/">WhatsApp:</a> aplicación de mensajería.</li>
+<li><a href="https://www.meta.com/quest/">Meta Quest:</a> dispositivos de realidad virtual.</li>
+</ul>
+<table>
+<tr><th>Producto</th><th>Función</th></tr>
+<tr><td>Facebook</td><td>Compartir publicaciones</td></tr>
+<tr><td>Instagram</td><td>Compartir imágenes</td></tr>
+<tr><td>WhatsApp</td><td>Enviar mensajes</td></tr>
+</table>
+</section>
+<section id="contacto">
+<h2>Contacto</h2>
+<form action="mailto:info@meta.com" method="post" enctype="text/plain">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required>
+<label for="tema">Motivo:</label>
+<select id="tema" name="tema" required>
+<option value="">Selecciona una opción</option>
+<option>Consulta</option>
+<option>Soporte</option>
+<option>Otro</option>
+</select>
+<label for="mensaje">Mensaje:</label>
+<textarea id="mensaje" name="mensaje" required></textarea>
+<button type="submit">Enviar</button>
+</form>
+</section>
 </main>
-    <footer id="contacto">
-        <div class="container"><p>2026 Pagina de proyecto ambientada en meta</p></div>
-    </footer>
+<footer>
+<p>© 2026 Meta - Todos los derechos reservados.</p>
+<a href="#inicio">Volver al inicio</a>
+</footer>
 </body>
 </html>
