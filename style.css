@@ -25,5 +25,38 @@ h2{
 }
 img{
     width: 100%;
+    max-width: 350px;
+}
+ul{
+    padding-left: 25px;
+}
+table{
+    width: 100%;
     border-collapse: collapse;
+}
+td, th{
+    border: 1px, solid gray;
+    padding: 10px;
+}
+th{
+    background-color:#0866ff;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input,select,textarea,button{
+    padding: 10px;
+}
+button{
+    background-color: #0866ff;
+    color: white;
+    border: none;
+}
+footer{
+    background-color: #172b4d;
+    color: white;
 }
