@@ -68,3 +68,12 @@ footer{
         margin: 5px;
     }
 }
+a, li{
+    font-size: larger;
+}
+a{
+    font-family: fantasy;
+}
+li{
+    font-family: cursive;
+}
